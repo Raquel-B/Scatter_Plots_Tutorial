@@ -51,8 +51,8 @@ The `geom_point()` layer is used to draw scatter plots. Your first chart will sh
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point()
 ```
-Image 2 – Relationship between MPG and HP variables
 
+Image 2 – Relationship between MPG and HP variables
 
 We agree with you – it’s not the prettiest visualization. You’ll learn how to deal with that in the following sections.
 
@@ -75,6 +75,7 @@ Better, but what if you don’t want to hardcode color and size values? You can 
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point(aes(size = qsec, color = cyl))
 ```
+
 Image 4 – Changing size and color by variables
 
 Changing shapes is also straightforward. Dots aren’t appropriate for every use case, and you’re free to change the shape with the `shape` attribute. You can find the list of all available shapes here (http://www.sthda.com/english/wiki/ggplot2-point-shapes)
@@ -96,6 +97,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
   geom_point(size = 5, color = "#0099f9") + 
   theme_classic()
 ```
+
 Image 6 – Changing chart theme
 
 
@@ -115,6 +117,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
   geom_text_repel(label = rownames(mtcars),  size=3.5)
 
 ```
+
 Image 7 – Adding text to the visualization
 
 The `ggrepel` package is here to prevent the overlap between text. You can add text with the plain `geom_text` layer, but it would be impossible to read the text for the points that are close. 
@@ -126,6 +129,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
   geom_point(size = 5, color = "#0099f9") + 
   geom_label_repel(label = rownames(mtcars),  size=3.5)
 ```
+
 Image 8 – Adding labels to the visualization
 
 
@@ -148,6 +152,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
     caption = "Source: MTCars dataset"
   )
 ```
+
 Image 9 – Adding title, subtitle, and caption
 
 
@@ -207,6 +212,7 @@ ggplot(mtcars, aes(x = mpg, y = hp)) +
   geom_point(aes(size = qsec, color = cyl)) +
   theme(legend.position = "top")
 ```
+
 Image 12 – Changing the legend position
 
 
