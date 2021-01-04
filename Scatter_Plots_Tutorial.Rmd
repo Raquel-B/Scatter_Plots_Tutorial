@@ -66,8 +66,8 @@ Here’s how to make the points blue and a bit larger:
 ggplot(mtcars, aes(x = mpg, y = hp)) + 
   geom_point(size = 5, color = "#0099f9")
 ```
-Image 3 – Changing size and color
 
+Image 3 – Changing size and color
 
 Better, but what if you don’t want to hardcode color and size values? You can put variable names instead. Here’s how to change the color based on the `cyl` variable and size by `qsec`:
 
